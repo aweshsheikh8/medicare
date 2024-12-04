@@ -4,385 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Medicare.com</title>
-    <style>
-        
-                         *{
-    
-                                    margin: 0;
-                                   padding: 0;
-                                   text-decoration: none;
-                                   list-style: none;
-
-                          }
-                      body{
-                           font-family: Arial, Helvetica, sans-serif;
-                           list-style: none;
-
-                           } 
-                           @media only screen and (min-width:480px) and (max-width:1439px) {
-                            .head{
-                                width: 100%;
-                                height: 50px;
-                                background-color:white;
-                                
-                                color:black;
-                                display: flex;
-                                justify-content: ;
-                                align-items: center;
-                                border-bottom: 1px solid gray;
-                                 
-                                 
-                                
-                                
-                                
-                            
-                                
-                               
-                            }
-                            .logo{
-                                width: 120px;
-                                height: auto;
-                                mix-blend-mode: multiply;
-                                margin-left: 10px;
-                                
-                                
-                                
-
-                            }
-                            .logo img{
-                                width: 100%;
-                                height: auto;
-                            }
-                            .logo p{
-                                position: absolute;
-                                top: 20px;
-                                left: 90px ;
-                                font-size: 20px;
-                                font-weight: 600;
-                                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                            }
-                            .nav{
-                             position: absolute;
-                             left: 400px;
-                              
-                            }
-                             .bar
-                            { display: flex;
-                                   justify-content: space-around;
-                                   align-items: center;
-                             }
-                            .nav p{
-                                margin-right: 45px;
-                            } 
-                            .nav a{
-                                color: black;
-                                justify-content: space-around;
-                                font-weight: bold;
-
-                            }
-                           .nav p:hover{
-                                scale:1.2;
-                                border-bottom: 2px solid #9b3bfc;
-                               
-                                
-                                
-                            }
-                            .nav a:hover{color: #9b3bfc;}
-                            .button{
-                                position: absolute;
-                                right: 10px;
-                            }
-                        .head    button{
-                                width: 90px;
-                                height: 30px;
-                                color:white;
-                                font-size: 15px;
-                                background-color:black ;
-                                border: 2px solid black;
-                                margin-right: 20px;
-                                border-radius: 25px;
-                                font-weight: bold;
-                            }
-                         .head   button:hover{
-                                color: black;
-                                font-weight: bold;
-                                background-color:#F4E7FB;
-                                 border: 2px solid black; 
-                            }
-                            .contant{
-                                width: 100%;
-                                height: 750px;
-                                
-                               
-                                
-                                
-                                
-                                background:linear-gradient(120deg  ,#F3DCDC,white,#F4E7FB,#fdc5f8,#C8A8E9);
-                            }
-                            .heading{
-                                color: black;
-                                background-color:none;
-                                font-size: 70px;
-                                width: 100%;
-                                height: 300px;
-                                display: flex;
-                               justify-content: center;
-                               align-items: center;
-                                padding-top: 30px;
-                                
-                                
-                                
-                                
-                            }
-                            .cent{
-                             text-align: center;
-                            }
-                           
-                            .p1{
-                                text-align: center;
-                                color:black;
-                                font-size: 15px;
-                            }
-                            .btn{
-                                width: 200px;
-                                height: 50px;
-                                margin-top: 30px;
-                                font-size: 20px;
-                                border-radius: 25px;
-                                font-weight: 600;
-                                background:linear-gradient(to left,#ff9cf7,#9b3bfc) ;
-                                border: none;
-                                box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
-                            }
-                            button:hover{
-                                scale:1.2;
-                            }
-                            .wrapper{
-            max-height: 300px;
-            border: none;
-            margin-top:30px ;
-            display: flex;
-            overflow-x: auto;
-            padding-top: 10px;
-            padding-left: 10px ;
-            padding-right: 10px;
-        }
-        .wrapper::-webkit-scrollbar{
-            width: 0;
-        }
-        .wrapper .item{
-            min-width:500px;
-            height: 200px;
-            /* line-height: 110px; */
-            
-            background-color: ;
-            margin-left: 10px;
-            border-radius: 25px;
-            border: 6px solid white;
-            overflow: hidden;
-            
-        }
-        img{
-            width: 100%;
-            height: auto;
-        }
-         @keyframes appear {
-            from {
-                opacity: 0;
-                scale: 0.5;
-            }
-            to {
-                opacity: 1;
-                scale: 1;
-            }
-            
-         }
-         
-        
-        
-        
-        
-        .back{
-                                width: 100%;
-                                height: 550px;
-                                background-color:#E5E4E2;
-                                
-                            }
-                            .card{
-                                width: 100%;
-                                height: auto;
-                                display: flex;
-                                justify-content: space-around;
-                                
-                            }
-                        
-                            .card1{
-                                width: 350px;
-                                height: 300px;
-                                background-color: none;
-                                margin-top: 50px; 
-                                font-size: 50px;
-                                animation: appear  linear;
-                                animation-timeline: view();
-                                animation-range: entry 0% cover 40%;
-                                
-
-                                
-
-                            }
-                            .card1 p{
-                                padding-top: 5px;
-                                padding-left: 5px;
-                                font-weight: 600;
-                            }
-                            .sed{
-                                width: 200px;
-                                height: 50px;
-                                border-radius: 25px;
-                                font-size: 18px;
-                                margin-top: 20px;
-                                font-weight: bold;
-                                background:linear-gradient(to left,#ff9cf7,#9b3bfc) ;
-                                border: none;
-                                box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
-                                
-                            }
-                            .card2{
-                                width: 350px;
-                                height: 330px;
-                                background:linear-gradient(#9b3bfc,#ff9cf7) ;
-                                margin-top: 30px;
-                                border-radius: 35px  35px 0px 0px;
-                                overflow: hidden;
-                                animation: appear  linear;
-                                animation-timeline: view();
-                                animation-range: entry 0% cover 40%;
-                                box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
-                              
-
-
-                            }
-                            .card2 p{
-                                font-size: 22px;
-                                color: white;
-                                margin-top: 20px;
-                                margin-left:10px ;
-                                font-weight: bold;
-                            }
-                            .end {
-                                width: 300px;
-                                height: 250px;
-                                background-color: black;
-                                margin-top: 30px;
-                                margin-left: 25px;
-                                border-radius: 25px ;
-                                overflow: hidden;
-                                
-                            }
-                            img{
-                                width: 100%;
-                                height: auto;
-                            }
-                            .card3{
-                                width: 350px;
-                                height: 330px;
-                                background:linear-gradient(#9b3bfc,#ff9cf7) ;
-                                margin-top: 30px;
-                                border-radius: 15px;
-                                overflow: hidden;
-                                animation: appear  linear;
-                                animation-timeline: view();
-                                animation-range: entry 0% cover 40%;
-                                box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
-                                
-
-                            }
-                            .card3 p{
-                                color: black;
-                               
-                                font-weight: 600;
-                                align-items: center;
-                                font-size: 20px;
-                                text-align: center;
-                                margin-top: 20px;
-                                
-                            }
-                            .par1{
-                                width: 100%;
-                                height: auto;
-                                margin-top: 30px;
-                                display: flex;
-                                justify-content: space-around;
-                                position: relative;
-                            }
-                            .par{
-                                width: 350px;
-                                height: 120px;
-                                background-color:white;
-                                border-radius: 20px;
-                                box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
-                            }
-                            .par h2{
-                                margin-left: 35px;
-                                margin-top: -25px; font-size: 30px;
-                            }
-                            .par i{
-                               
-                                font-size: 10px;
-                                margin-top: 32px;
-                                margin-left: 10px;
-
-                            }
-                           .icon i{
-                            position: absolute;
-                            font-size: 20px;
-                            margin-left: 270px;
-                            margin-top: -25px;
-                            background-color: #d7b0fd;
-                             padding: 15px; 
-                            border-radius: 50%;
-                            color: #9b3bfc;
-                            
-                           }
-                           .par p{
-                            font-size: 15px;
-                            margin-left: 20px;
-                            margin-top: 30px;
-                            color: grey;
-                           }
-                           .about{
-                            width: 100%;
-                            height: 450px;
-                            background-color: white;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                           }
-                           .center{
-                            width: 90%;
-                            height: 400px;
-                            background-color: #E5E4E2;
-                            border-radius: 25px;
-                            overflow: hidden;
-                            
-                           }
-                           .im{
-                            width: 500px;
-                            height: 400px;
-                            margin-left: 720px;
-                            
-                            
-                           }
-                           .im img{
-                            width: 100%;
-                            height: auto;
-                           }
-
-                            
-                           }
-        
-    </style>
+   
 </head>
 <body>
     <header class="head">
@@ -396,7 +20,7 @@
             </div>
             
         </div>
-        <div class="button"> <button>Sing inn</button> <button>Sing Out</button></div>
+        <div class="buttonb"> <button>Sing inn</button> <button>Sing Out</button></div>
     </header>
     <article class="main">
         <div class="contant">
@@ -426,10 +50,89 @@
             
         </div>
         <div class="about">
-            <div class="center"><div class="im"><img src="https://www.shutterstock.com/image-vector/good-male-doctor-pointing-somethings-600nw-2281709301.jpg" alt=""></div></div>
-
+            <div class="center">
+              <div class="con">
+                         <div class="lets"><h1> Let's know about our main goal</h1></div>
+                    <div class="abo"><p>A human body is a conversation going on, both within the cells and between the cells, and they’re telling each other to grow and to die; when you’re sick, something’s gone wrong with that conversation.</p></div>
+                     <div class="graff">
+                         <div class="ri1"><p><i class="fa-regular fa-circle-check"></i>Providing Accessible Information</p></div>
+                           <div class="ri2"><p><i class="fa-regular fa-circle-check"></i>Building Trust</p></div>
+                         <div class="ri3"><p><i class="fa-regular fa-circle-check"></i>Enhancing Patient Engagement</p></div>
+                          <div class="ri4"><p><i class="fa-regular fa-circle-check"></i>Community Involvement</p></div>
+                         <div class="ri5"><p><i class="fa-regular fa-circle-check"></i>Promoting Health Education</p></div>
+                         <div class="ri6"><p><i class="fa-regular fa-circle-check"></i>Security and Privacy</p></div>    
+         
+              
+              
+                    </div>    
+              </div>
+               <div class="im"><img src="https://www.shutterstock.com/image-photo/horizontal-banner-smiling-young-male-260nw-1760207732.jpg" alt=""></div> 
+            </div>
+          
         </div>
+        <div class="info">
+            <div class="head1"><h1>Meet our expert doctors</h1></div>
+            <div class="head2"><p>We aim to share information about our team</p></div>
+            <div class="wrapper2">
+                <div class="item2"><div class="im2"><img src="https://images.javatpoint.com/top10-technologies/images/top-10-doctors-in-the-world9.png" alt=""></div><p>Dr Mark. F. Aaron, Md</p></div>
+                <div class="item2"><div class="im2"><img src="https://img.paisawapas.com/ovz3vew9pw/2024/07/11164842/Dr.-Barth-Green.jpg" alt=""></div><p>Dr Naresh Trehan</p></div>
+                <div class="item2"><div class="im2"><img src="https://hartfordhealthcaremedicalgroup.org/Configuration/Find%20a%20Doctor/Physicians/003j000000GD3reAAD.webp" alt=""></div><p>Dr Khalid Abbed, Md</p></div>
+                <div class="item2"><div class="im2"><img src="https://cdn-images.kyruus.com/providermatch/umms/photos/200/abbas-fouad-1023087699.jpg" alt=""></div><p>Dr Fouad. M. Abbas, Md</p></div>
+                <div class="item2"><div class="im2"><img src="https://images.javatpoint.com/top10-technologies/images/top-10-doctors-in-the-world3.png" alt=""></div><p>Dr Myles. B. Abbott, Md</p></div>
+                <div class="item2"><div class="im2"><img src="https://www.uwmedicine.org/sites/stevie/files/styles/square_l/public/provider-images/api-bioimage-corrie-anderson.jpg?itok=xQaWvt2p" alt=""></div><p>Dr Corrie Tm Anderson,</p></div>
+                
+                
+                
+            </div>
+        </div>
+        <div class="information">
+             <div class="head1"><h1>Here are some key vision</h1></div>
+          <div class="head2"><p>we are committed to upholding the highest standards of medical excellence while ensuring each patient feel valued and heard.</p></div>
+       <div class="grid">
+        <div class="center1">
+        <div class="gridbox"><p>001</p><i class="fa-regular fa-lightbulb"></i><h4>Path to wellness</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        <div class="gridbox"><p>002</p><i class="fa-regular fa-lightbulb"></i><h4>Mental Health Services</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        <div class="gridbox"><p>003</p><i class="fa-regular fa-lightbulb"></i><h4>Diagnostic Services</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div> 
+        <div class="gridbox"><p>004</p><i class="fa-regular fa-lightbulb"></i><h4>Beyond Medicine</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        <div class="gridbox"><p>005</p><i class="fa-regular fa-lightbulb"></i><h4>Pediatric Care </h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        <div class="gridbox"><p>006</p><i class="fa-regular fa-lightbulb"></i><h4>Telehealth Services</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        <div class="gridbox"><p>007</p><i class="fa-regular fa-lightbulb"></i><h4>Future of Care</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div> 
+        <div class="gridbox"><p>008</p><i class="fa-regular fa-lightbulb"></i><h4>Holistic Health</h4><h5>Our vision is to cmpoer petients through personalized care</h5></div>
+        </div>
+       </div>
+        </div>
+        <div class="od">
+            <div class="blue"><img src="https://png.pngtree.com/thumb_back/fh260/background/20200728/pngtree-modern-abstract-line-backround-with-dark-blue-and-purple-colors-can-image_365433.jpg" alt="">
+                <h1>Bring your customer services the next level of excellence.</h1>
+                <div class="btn1"><button>Make a schedule  <i class="fa-solid fa-arrow-right"></i></button></div>
+            </div>
+        </div>
+
+        
+
     </article>
+    <footer>
+        <div class="footercontant">
+            <div class="footerhead"><h1>Let's Connect with us</h1> <div class="button2"> <button>Get Started</button> <button>Contact Us</button></div> </div>
+            <div class="name1"><h1>Madicare</h1></div>
+            <p>Subscribe our newsletter for update</p>
+            <div class="search"><input type="email" placeholder="enter yuor email address..."><button class="btn5">Book a Demo</button></div>
+             <div class="insta">
+                
+                   <div class="emoji1"> <i class="fa-brands fa-instagram"></i></div>
+                   <div class="emoji2"> <i class="fa-brands fa-youtube"></i></div>
+                   <div class="emoji3"> <i class="fa-brands fa-facebook"></i></div>
+                   <div class="emoji4">    <i class="fa-brands fa-x-twitter"></i></div>
+
+                
+            </div>
+            <div class="play">
+                <div class="plya1"><img src="https://static.vecteezy.com/system/resources/previews/012/871/364/non_2x/google-play-store-download-button-in-white-colors-download-on-the-google-play-store-free-png.png" alt=""></div>
+                <div class="plya2"><img src="https://static.vecteezy.com/system/resources/thumbnails/012/871/374/small/app-store-download-button-in-white-colors-download-on-the-apple-app-store-free-png.png" alt=""></div>
+            </div>
+        </div>
+        
+    </footer>
     
 </body>
 </html>
